@@ -9,6 +9,12 @@ for complete, balanced 2 x 2 crossover studies with one PK endpoint.
 Includes interim decisions, sample-size re-estimation, combined-stage analysis,
 seeded Monte Carlo simulations and article scenario grids.
 
+## Article citation
+
+This implementation of TSD-1/TSD-2 is based on the following article. Please cite it when using these methods:
+
+> Karalis, V. (2013). The role of the upper sample size limit in two-stage bioequivalence designs. *International Journal of Pharmaceutics*, **456**(1), 87–94. [https://doi.org/10.1016/j.ijpharm.2013.08.013](https://doi.org/10.1016/j.ijpharm.2013.08.013)
+
 ## Install
 
 Supported Python versions: **3.10, 3.11, 3.12, 3.13 and 3.14**.
@@ -101,9 +107,7 @@ The completed checks and initial numerical comparison are recorded in
 
 Please cite the following article when using the TSD-1/TSD-2 implementation:
 
-- Vangelis D. Karalis (2013). *The role of the upper sample size limit in two-stage
-  bioequivalence designs.* International Journal of Pharmaceutics 456, 87-94.
-  [doi:10.1016/j.ijpharm.2013.08.013](https://doi.org/10.1016/j.ijpharm.2013.08.013)
+- Karalis, V. (2013). The role of the upper sample size limit in two-stage bioequivalence designs. *International Journal of Pharmaceutics*, **456**(1), 87–94. [https://doi.org/10.1016/j.ijpharm.2013.08.013](https://doi.org/10.1016/j.ijpharm.2013.08.013)
 
 GitHub's **Cite this repository** feature uses [CITATION.cff](CITATION.cff),
 which lists this article as the preferred citation.
