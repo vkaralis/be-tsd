@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the article below when using this software."
+type: software
+title: "Two-stage bioequivalence designs in Python"
+authors:
+  - family-names: Karalis
+    given-names: Vangelis D.
+version: 0.1.0
+date-released: 2026-09-30
+license: MIT
+keywords:
+  - Bioequivalence
+  - Two-stage designs
+preferred-citation:
+  type: article
+  title: "The role of the upper sample size limit in two-stage bioequivalence designs"
+  authors:
+    - family-names: Karalis
+      given-names: Vangelis D.
+  journal: International Journal of Pharmaceutics
+  year: 2013
+  volume: "456"
+  start: "87"
+  end: "94"
+  doi: 10.1016/j.ijpharm.2013.08.013

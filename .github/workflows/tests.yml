@@ -1,0 +1,33 @@
+name: Python checks
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: python -m pip install '.[dev,plots]'
+      - name: Validate citation
+        run: cffconvert --validate
+      - name: Run tests
+        run: python -m pytest
+      - name: Build distributions
+        run: python -m build
+      - name: Test wheel installation
+        run: |
+          python -m pip install --force-reinstall --no-deps dist/*.whl
+          cd "${{ runner.temp }}"
+          twostage-be --method B --n1 24 --trials 20 --seed 2026
+      - name: Test examples and plots
+        env:
+          MPLBACKEND: Agg
+        run: |
+          python examples/analyse_trial.py
+          python examples/run_study.py --preset comparison --trials 5 --output results/ci.csv
+          python examples/plot_study.py results/ci.csv
