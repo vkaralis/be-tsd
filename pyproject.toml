@@ -22,6 +22,10 @@ classifiers = [
 ]
 dependencies = ["numpy>=1.24", "scipy>=1.10"]
 
+[project.urls]
+Repository = "https://github.com/vkaralis/be-tsd"
+Documentation = "https://github.com/vkaralis/be-tsd/blob/main/README.md"
+
 [project.optional-dependencies]
 dev = ["pytest>=7", "build>=1", "cffconvert>=2"]
 plots = ["matplotlib>=3.7"]

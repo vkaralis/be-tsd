@@ -16,6 +16,10 @@ execution, the analysis example, the five-method comparison example and plot
 generation. The CI matrix includes exactly those five supported minor versions;
 package metadata declares `>=3.10,<3.15`.
 
+The [GitHub Actions release check](https://github.com/vkaralis/be-tsd/actions/runs/36729576816)
+also passed on all five Python versions, including citation validation,
+distribution builds, wheel installation, examples and plot generation.
+
 The MIT license, author metadata (Vangelis D. Karalis), citation, and keywords
 were checked. Publication files contain no machine-specific paths or assistant
 attribution. Generated caches, smoke results and installation metadata are
@@ -61,4 +65,3 @@ and compare percentages across all scenarios.
 - Full million-trial Table 1/2 runs and 100,000-trial figure runs.
 - Same deterministic input data analysed in Python and a running MATLAB version.
 - Large-simulation lower/upper boundary comparisons for all five methods.
-- GitHub Actions execution after choosing and publishing the repository.
